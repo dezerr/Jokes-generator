@@ -1,5 +1,7 @@
 # jokesgenerator
 
+Online ✅ https://givemeajoke.alwaysdata.net/
+
 # Installation
 
 `git clone https://github.com/dezerr/jokesgenerator.git`
