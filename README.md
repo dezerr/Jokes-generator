@@ -12,6 +12,9 @@ Online ✅ https://givemeajoke.alwaysdata.net/
 - Sass
 - one-liner-joke
 
+# Launching the project
+`parcel index.html`
+
 # Build
 The build path is : dist/index.html
 
