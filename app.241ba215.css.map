@@ -1,1 +1,0 @@
-{"version":3,"sources":["src\\css\\style.scss"],"names":[],"mappings":"AAEA,KACE","file":"app.241ba215.css","sourceRoot":"..","sourcesContent":["$magn: #4214;\r\n\r\nbody {\r\n  background: $magn;\r\n}"]}
