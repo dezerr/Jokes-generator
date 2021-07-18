@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../Florian/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../Florian/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/css/style.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../Florian/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"src/css/style.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/one-liner-joke/jokes.json":[function(require,module,exports) {
+},{"_css_loader":"../../../Florian/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"node_modules/one-liner-joke/jokes.json":[function(require,module,exports) {
 module.exports = [{
   "body": "A recent study has found that women who carry a little extra weight live longer than the men who mention it.",
   "tags": ["attitude", "life", "men", "women"]
@@ -8118,7 +8118,7 @@ function getRandomJoke() {
     var flagged = 0;
 
     for (var i = 0; i < exclude_tags.length; i++) {
-      if (joke.tags.indexOf(exclude_tags[i]) > 0) {
+      if (joke.tags.indexOf(exclude_tags[i]) > -1) {
         flagged = 1;
       }
     }
@@ -8164,7 +8164,7 @@ function getRandomJokeWithTag(tag) {
     var flagged = 0;
 
     for (var i = 0; i < exclude_tags.length; i++) {
-      if (joke.tags.indexOf(exclude_tags[i]) > 0) {
+      if (joke.tags.indexOf(exclude_tags[i]) > -1) {
         flagged = 1;
       }
     }
@@ -8218,7 +8218,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 (0, _joke.default)();
 console.log('It works!');
-},{"../css/style.scss":"src/css/style.scss","./function/joke":"src/js/function/joke.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../css/style.scss":"src/css/style.scss","./function/joke":"src/js/function/joke.js"}],"../../../Florian/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -8246,7 +8246,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "16260" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1032" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -8277,9 +8277,8 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         assetsToAccept.forEach(function (v) {
           hmrAcceptRun(v[0], v[1]);
         });
-      } else if (location.reload) {
-        // `location` global exists in a web worker context but lacks `.reload()` function.
-        location.reload();
+      } else {
+        window.location.reload();
       }
     }
 
@@ -8422,5 +8421,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/js/app.js"], null)
+},{}]},{},["../../../Florian/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/js/app.js"], null)
 //# sourceMappingURL=/app.77c12427.js.map
